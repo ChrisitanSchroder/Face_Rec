@@ -1,0 +1,88 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7deff723-e3a0-4bb2-ad00-bd4a49013945</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Face_reg.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Face reg</Name>
+    <RootNamespace>Face reg</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="cascades\data\__init__.py" />
+    <Compile Include="FaceTrainer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Face_reg.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module2.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\abba.png" />
+    <Content Include="cascades\data\haarcascade_eye.xml" />
+    <Content Include="cascades\data\haarcascade_eye_tree_eyeglasses.xml" />
+    <Content Include="cascades\data\haarcascade_frontalcatface.xml" />
+    <Content Include="cascades\data\haarcascade_frontalcatface_extended.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_alt.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_alt2.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_alt_tree.xml" />
+    <Content Include="cascades\data\haarcascade_frontalface_default.xml" />
+    <Content Include="cascades\data\haarcascade_fullbody.xml" />
+    <Content Include="cascades\data\haarcascade_lefteye_2splits.xml" />
+    <Content Include="cascades\data\haarcascade_licence_plate_rus_16stages.xml" />
+    <Content Include="cascades\data\haarcascade_lowerbody.xml" />
+    <Content Include="cascades\data\haarcascade_profileface.xml" />
+    <Content Include="cascades\data\haarcascade_righteye_2splits.xml" />
+    <Content Include="cascades\data\haarcascade_russian_plate_number.xml" />
+    <Content Include="cascades\data\haarcascade_smile.xml" />
+    <Content Include="cascades\data\haarcascade_upperbody.xml" />
+    <Content Include="cascades\third-party\frontalEyes35x16.xml" />
+    <Content Include="cascades\third-party\frontalEyes35x16XML.zip" />
+    <Content Include="cascades\third-party\Nose18x15.xml" />
+    <Content Include="haarcascade_frontalface_default.xml" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_06_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_08_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_09_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_10_Pro.jpg" />
+    <Content Include="Images\Christian\WIN_20190930_10_26_11_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_36_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_37_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_39_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_41_Pro.jpg" />
+    <Content Include="Images\Jeppe\WIN_20190930_10_26_43_Pro.jpg" />
+    <Content Include="Images\test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cascades\" />
+    <Folder Include="cascades\data\" />
+    <Folder Include="cascades\third-party\" />
+    <Folder Include="Images\" />
+    <Folder Include="Images\Jeppe\" />
+    <Folder Include="Images\Christian\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
